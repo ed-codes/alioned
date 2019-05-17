@@ -14,10 +14,7 @@ body {
 }
 
 header .navbar-brand .navbar-item {
-  flex-wrap: wrap;
-}
-header .title {
-  width: 100%;
+  display: block;
 }
 header .subtitle {
   color: #BDBDBD;
