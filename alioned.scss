@@ -1,0 +1,71 @@
+// sass --watch alioned.scss alioned.css
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.is-font-light {
+	font-weight: 300;
+}
+
+.alioned-brand {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: -0.03em;
+}
+
+header {
+	.navbar-brand .navbar-item {
+		flex-wrap: wrap;
+	}
+	.title {
+		width: 100%;
+	}
+	.subtitle {
+		color: #BDBDBD;
+		font-weight: 600;
+		font-size: 2rem;
+	}
+}
+
+section.intro {
+	.main-links {
+		font-weight: 700;
+		margin-bottom: 60px;
+	}
+	.together {
+		margin-bottom: 10px;
+	}
+	padding-bottom: 96px;
+}
+
+
+section.main {
+	background-color: #f7f7f7;
+	padding-top: 96px;
+}
+
+section.contact {
+	background-color: #f7f7f7;
+
+	input,
+	textarea {
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+	}
+	.button {
+		background-color: #333;
+		color: #f7f7f7;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 16px;
+		height: auto;
+		padding: 10px 30px;
+		&:hover {
+			background-color: black;
+		}
+	}
+}

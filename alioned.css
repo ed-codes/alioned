@@ -1,0 +1,66 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.is-font-light {
+  font-weight: 300;
+}
+
+.alioned-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+header .navbar-brand .navbar-item {
+  flex-wrap: wrap;
+}
+header .title {
+  width: 100%;
+}
+header .subtitle {
+  color: #BDBDBD;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+section.intro {
+  padding-bottom: 96px;
+}
+section.intro .main-links {
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+section.intro .together {
+  margin-bottom: 10px;
+}
+
+section.main {
+  background-color: #f7f7f7;
+  padding-top: 96px;
+}
+
+section.contact {
+  background-color: #f7f7f7;
+}
+section.contact input,
+section.contact textarea {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+section.contact .button {
+  background-color: #333;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  height: auto;
+  padding: 10px 30px;
+}
+section.contact .button:hover {
+  background-color: black;
+}
+
+/*# sourceMappingURL=alioned.css.map */
