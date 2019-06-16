@@ -13,6 +13,22 @@ body {
   letter-spacing: -0.03em;
 }
 
+.text-l {
+  font-size: 1.125rem;
+}
+
+.text-m {
+  font-size: 1rem;
+}
+
+.text-s {
+  font-size: 0.875rem;
+}
+
+.section h2.title {
+  margin-bottom: 3rem;
+}
+
 header .navbar-brand .navbar-item {
   display: block;
 }
@@ -33,9 +49,55 @@ section.intro .together {
   margin-bottom: 10px;
 }
 
-section.main {
+section.services {
   background-color: #f7f7f7;
-  padding-top: 96px;
+}
+section.services .service {
+  margin-bottom: 3rem;
+}
+section.services .service img {
+  float: left;
+  width: 64px;
+  margin-right: 32px;
+}
+section.services .service h3 {
+  font-weight: 600;
+}
+section.services .service p {
+  margin-left: 96px;
+}
+
+section.principles blockquote {
+  padding-left: 2rem;
+  padding-top: 32px;
+  font-style: italic;
+  position: relative;
+  text-indent: 32px;
+  font-size: 1.125rem;
+}
+section.principles blockquote:before {
+  content: "";
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  background-image: url("assets/quotes.png");
+  background-size: 100%;
+}
+section.principles blockquote cite {
+  font-style: normal;
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+}
+section.principles .principle {
+  margin-bottom: 3rem;
+}
+section.principles .principle h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
 }
 
 section.contact {

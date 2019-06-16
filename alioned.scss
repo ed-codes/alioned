@@ -16,6 +16,31 @@ body {
 	letter-spacing: -0.03em;
 }
 
+.text-l {
+	font-size: 1.125rem;
+}
+.text-m {
+	font-size: 1rem;
+}
+.text-s {
+	font-size: 0.875rem;
+}
+
+
+
+.section {
+	// padding-top: 6rem;
+	// padding-bottom: 6rem;
+	// @media (max-width: 768px) {
+	// 	padding-top: 3rem;
+	// 	padding-bottom: 3rem;
+	// }
+	h2.title {
+		margin-bottom: 3rem;
+	}
+}
+
+
 header {
 	.navbar-brand .navbar-item {
 		display: block; //remove this when replacing with logo, flex by default
@@ -40,10 +65,64 @@ section.intro {
 }
 
 
-section.main {
+
+
+
+section.services {
 	background-color: #f7f7f7;
-	padding-top: 96px;
+	.service {
+		margin-bottom: 3rem;
+		img {
+			float: left;
+			width: 64px;
+			margin-right: 32px;
+		}
+		h3 {
+			font-weight: 600;
+		}
+		p {
+			margin-left: 96px;
+		}
+	}
 }
+
+
+section.principles {
+	blockquote {
+		padding-left: 2rem;
+		padding-top: 32px;
+		font-style: italic;
+		position: relative;
+		text-indent: 32px;
+		font-size: 1.125rem;
+		&:before {
+			content: '';
+			height: 32px;
+			width: 32px;
+			position: absolute;
+			top: 0;
+			left: 16px;
+			background-image: url('assets/quotes.png');
+			background-size: 100%;
+
+		}
+		cite {
+			font-style: normal;
+			display: block;
+			text-align: right;
+			margin-top: 1rem;
+		}
+	}
+	.principle {
+		margin-bottom: 3rem;
+		h3 {
+			font-weight: 600;
+			margin-bottom: 1rem;
+			margin-left: 2rem;
+		}
+	}
+}
+
 
 section.contact {
 	background-color: #f7f7f7;
