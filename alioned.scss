@@ -244,6 +244,45 @@ section.principles {
 	}
 }
 
+section.portfolio {
+	.image-container {
+		position: relative;
+		&:hover {
+			.img-cover {
+				opacity: 1;
+			}
+		}
+		img {
+			display: block;
+		}
+		.img-cover {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,0,0,0.5);
+			.text {
+				color: white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				.site-name {
+					margin-bottom: .5rem;
+				}
+				.button {
+					background: transparent;
+					color: white;
+					border-color: white;
+				}
+			}
+		}
+	}
+}
+
 
 section.contact {
 	background: $ed-violet;

@@ -234,6 +234,41 @@ section.principles .principle h3 {
   margin-left: 2rem;
 }
 
+section.portfolio .image-container {
+  position: relative;
+}
+section.portfolio .image-container:hover .img-cover {
+  opacity: 1;
+}
+section.portfolio .image-container img {
+  display: block;
+}
+section.portfolio .image-container .img-cover {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+section.portfolio .image-container .img-cover .text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.portfolio .image-container .img-cover .text .site-name {
+  margin-bottom: 0.5rem;
+}
+section.portfolio .image-container .img-cover .text .button {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
 section.contact {
   background: #5C6AC4;
   color: white;
