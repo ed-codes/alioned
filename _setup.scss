@@ -1,0 +1,23 @@
+// sass --watch .:.
+
+
+
+section.setup-intro {
+	padding-top: 0;
+	.blurb {
+		margin-bottom: 2rem;
+	}
+}
+
+section.our-setup {
+	.setup-cat {
+		margin-bottom: 2rem;
+		font-weight: 600;
+	}
+	li {
+		margin-bottom: 2rem;
+		p:first-of-type {
+			font-weight: 600;
+		}
+	}
+}

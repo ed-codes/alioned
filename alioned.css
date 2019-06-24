@@ -1,9 +1,12 @@
 body {
   font-family: "Open Sans", sans-serif;
+  color: #36364D;
 }
 
 .title {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #36364D;
 }
 
 .is-font-light {
@@ -37,10 +40,14 @@ body {
   color: #FF7075;
 }
 
+.alioned-violet {
+  color: #4E51A6;
+}
+
 .social-links li {
   font-family: initial;
   display: inline-block;
-  color: #5C6AC4;
+  color: #4E51A6;
   background: white;
   width: 1.8em;
   height: 1.8em;
@@ -52,7 +59,7 @@ body {
   margin-right: 1rem;
 }
 .social-links li a {
-  color: #5C6AC4;
+  color: #4E51A6;
 }
 .social-links li.instagram-adjust svg {
   font-size: 1.1em;
@@ -72,6 +79,32 @@ body {
 }
 .section h2.title {
   margin-bottom: 3rem;
+}
+
+.button.alioned-button {
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 150px;
+  height: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+.button.alioned-button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.button.alioned-full {
+  background-color: #4E51A6;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: none;
+}
+.button.alioned-outlined {
+  border-color: #4E51A6;
+  border-width: 2px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
+  color: #4E51A6;
 }
 
 header.section {
@@ -234,6 +267,9 @@ section.principles .principle h3 {
   margin-left: 2rem;
 }
 
+section.portfolio {
+  padding-top: 0;
+}
 section.portfolio .image-container {
   position: relative;
 }
@@ -270,14 +306,14 @@ section.portfolio .image-container .img-cover .text .button {
 }
 
 section.contact {
-  background: #5C6AC4;
+  background: #4E51A6;
   color: white;
 }
 section.contact a, section.contact .title {
   color: white;
 }
 section.contact .social-links li a {
-  color: #5C6AC4;
+  color: #4E51A6;
 }
 section.contact .contact-info .title {
   margin-bottom: 3rem;
@@ -307,7 +343,7 @@ section.contact .contact-form input {
 }
 section.contact .contact-form .button {
   background-color: white;
-  color: #5C6AC4;
+  color: #4E51A6;
   font-weight: 600;
 }
 @media (max-width: 768px) {
@@ -320,6 +356,24 @@ section.contact .contact-form .button {
   section.contact .contact-form {
     margin-top: 2rem;
   }
+}
+
+section.setup-intro {
+  padding-top: 0;
+}
+section.setup-intro .blurb {
+  margin-bottom: 2rem;
+}
+
+section.our-setup .setup-cat {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+section.our-setup li {
+  margin-bottom: 2rem;
+}
+section.our-setup li p:first-of-type {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=alioned.css.map */
