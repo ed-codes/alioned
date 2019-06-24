@@ -2,6 +2,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #36364D;
 }
+body .strong {
+  color: #36364D;
+}
 
 .title {
   font-family: "Poppins", sans-serif;
@@ -167,6 +170,14 @@ section.intro .alioned-brand {
   section.intro {
     background-size: 90%;
     background-position: 50% 0;
+  }
+}
+@media (min-width: 1500px) {
+  section.intro {
+    background-size: contain;
+  }
+  section.intro .alioned-brand + p {
+    display: none;
   }
 }
 

@@ -40,6 +40,12 @@ section.intro {
 		background-size: 90%;
 		background-position: 50% 0; 
 	}
+	@media (min-width: 1500px) {
+		background-size: contain;
+		.alioned-brand + p {
+			display: none;
+		}
+	}
 }
 
 

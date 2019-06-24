@@ -14,6 +14,9 @@ $alioned-text: #36364D;
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: $alioned-text;
+	.strong {
+		color: $alioned-text;
+	}
 }
 
 .title {
