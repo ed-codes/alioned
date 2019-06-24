@@ -187,6 +187,13 @@ section.portfolio {
 			}
 		}
 	}
+	@media (max-width: 768px) {
+		.image-container {
+			.img-cover {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 

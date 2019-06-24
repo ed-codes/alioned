@@ -315,6 +315,11 @@ section.portfolio .image-container .img-cover .text .button {
   color: white;
   border-color: white;
 }
+@media (max-width: 768px) {
+  section.portfolio .image-container .img-cover {
+    opacity: 1;
+  }
+}
 
 section.contact {
   background: #4E51A6;
