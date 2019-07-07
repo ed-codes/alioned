@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Marketing and Web Design for eCommerce stores">
+
+		<title>Alioned Agency</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Poppins:400,600&display=swa" rel="stylesheet">
+
+		{{ $style := resources.Get "sass/alioned.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+		<link rel="stylesheet" href="{{$style.Permalink}}">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPF6256');</script>
+		<!-- End Google Tag Manager -->
+
+	</head>
+
+	<body>
+		
+		{{ partial "header.html" . }}
+
+		{{ block "main" . }}{{ end }}
+
+		
+	</body>
+
+</html>

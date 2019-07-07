@@ -1,5 +1,5 @@
 section.intro {
-	background-image: url('assets/alioned.png');
+	background-image: url('../img/alioned.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center top; 
@@ -22,7 +22,7 @@ section.intro {
 		margin-bottom: 6rem;
 	}
 	@media (max-width: 700px) {
-		background-image: url('assets/alioned-mobile.png');
+		background-image: url('../img/alioned-mobile.png');
 		background-size: 80%;
 		.main-links {
 			margin-bottom: 280px;
@@ -129,7 +129,7 @@ section.principles {
 			position: absolute;
 			top: 0;
 			left: 16px;
-			background-image: url('assets/quotes.png');
+			background-image: url('../img/quotes.png');
 			background-size: 100%;
 		}
 		cite {
