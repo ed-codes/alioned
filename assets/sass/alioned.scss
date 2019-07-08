@@ -7,6 +7,9 @@ $ed-violet: #5C6AC4;
 $alioned-violet: #4E51A6;
 
 $alioned-text: #36364D;
+$alioned-text-light: #F8F8FC;
+
+$alioned-footer: #3E4084;
 
 
 
@@ -143,6 +146,51 @@ header.section {
 
 
 // END HEADER ////////////////////////////
+
+
+footer.section.footer {
+	background-color: $alioned-footer;
+	.shopify-partnerlogo {
+		display: inline-block;
+		max-width: 284px;
+		margin-bottom: 3rem;
+	}
+	h2,a,p {
+		color: $alioned-text-light;
+	}
+	h4 {
+		color: #BBBBEC;
+		text-transform: uppercase;
+		margin-bottom: 3rem;
+	}
+	a {
+		text-decoration: underline;
+	}
+	li {
+		padding-bottom: 10px;
+	}
+	.footer-social {
+		margin-bottom: 3rem;
+	}
+	.end-col {
+		display: flex;
+		flex-direction: column;
+		.contact {
+			margin-top: auto;
+		}
+	}
+	@media (max-width: 768px) {
+		h4 {
+			margin-bottom: 1rem;
+		}
+		.copy {
+			display: none;
+		}
+	}
+}
+
+
+// END FOOTER ////////////////////////////
 
 
 
