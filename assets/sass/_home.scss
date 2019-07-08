@@ -1,51 +1,52 @@
 section.intro {
-	background-image: url('../img/alioned.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center top; 
 	padding-top: 0;
-	@media (max-width: 1000px) {
-		background-position: 50% 20%; 
+
+	h1 {
+		margin-bottom: 2rem;
 	}
-	.main-links {
+	h2 {
+		margin-bottom: 3rem;
+	}
+	
+	img.alioned-team {
+		margin-top: -2rem;
+	}
+	.collab-links {
+		margin-top: 1rem;
 		font-weight: 700;
-		margin-bottom: 60px;
+		font-size: 1.75rem;
 		font-family: 'Poppins', sans-serif;
 		a {
 			text-decoration: underline;
 		}
 	}
-	.together {
-		margin-bottom: 10px;
+
+	.h1-mobile {
+		display: none;
 	}
-	.alioned-brand {
-		margin-bottom: 6rem;
-	}
-	@media (max-width: 700px) {
-		background-image: url('../img/alioned-mobile.png');
-		background-size: 80%;
-		.main-links {
-			margin-bottom: 280px;
+
+	@media (max-width: 768px) {
+		img.alioned-team {
+			margin-top: 0;
+			width: 400px;
 		}
-		.alioned-brand {
-			margin-bottom: 2rem;
+		.columns {
+			display: flex;
+			flex-direction: column-reverse;
 		}
-	}
-	@media (max-width: 500px) {
-		.main-links {
-			margin-bottom: 220px;
+		.intro-text {
+			text-align: center;
+			margin-top: 2rem;
 		}
-	}
-	@media (min-width: 1200px) {
-		background-size: 90%;
-		background-position: 50% 0; 
-	}
-	@media (min-width: 1500px) {
-		background-size: contain;
-		.alioned-brand + p {
+		.h1-desktop {
 			display: none;
 		}
+		.h1-mobile {
+			display: block;
+		}
 	}
+	
+
 }
 
 

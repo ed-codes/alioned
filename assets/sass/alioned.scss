@@ -22,7 +22,7 @@ body {
 	}
 }
 
-.title {
+.title, h1, h2 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	color: $alioned-text;
@@ -141,7 +141,20 @@ header.section {
 		font-size: 2rem;
 	}
 	padding-top: 3rem;
-	padding-top: 3rem;
+	padding-bottom: 6rem;
+
+	.title {
+		margin-bottom: 0;
+	}
+
+	.logo {
+		max-height: none;
+		width: 164px;
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: 3rem;
+	}
 }
 
 
@@ -157,6 +170,9 @@ footer.section.footer {
 	}
 	h2,a,p {
 		color: $alioned-text-light;
+	}
+	h2 {
+		margin-bottom: 4rem;
 	}
 	h4 {
 		color: #BBBBEC;
