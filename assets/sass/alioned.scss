@@ -145,7 +145,8 @@ header.section {
 
 	.navbar-nav {
 		display: flex;
-    justify-content: flex-end;
+		justify-content: flex-end;
+		margin-top: 1rem;
 		.navbar-item {
 			display: inline-block;
 			&:hover {
@@ -169,7 +170,7 @@ header.section {
 
 	.logo {
 		max-height: none;
-		width: 40px;
+		width: 60px;
 	}
 
 	@media (max-width: 768px) {

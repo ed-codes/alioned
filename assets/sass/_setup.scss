@@ -46,6 +46,15 @@ section.our-setup {
 				background-size: 100%;
 				background-repeat: no-repeat;
 			}
+			@media (max-width: 768px) {
+				top: -260px;
+				left: -10%;
+				width: 120%;
+				height: calc(100% + 230px);
+				&:after {
+					content: none;
+				}
+			}
 		}
 		&:last-of-type {
 			margin-top: 4rem;
@@ -67,6 +76,14 @@ section.our-setup {
 					background-image: url('../img/seo-sugar.png');
 					background-size: 100%;
 					background-repeat: no-repeat;
+				}
+				@media (max-width: 768px) {
+					width: 120%;
+					right: -10%;
+					height: calc(100% + 70px + 4rem);
+					&:after {
+						content: none;
+					}
 				}
 			}
 			.support-note {
