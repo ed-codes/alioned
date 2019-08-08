@@ -7,17 +7,119 @@ section.setup-intro {
 	.blurb {
 		margin-bottom: 2rem;
 	}
+	.cta {
+		.alioned-goto {
+			line-height: 50px;
+			margin-left: 2rem;
+			color: $alioned-text;
+			text-decoration: underline;
+		}
+	}
 }
 
 section.our-setup {
-	.setup-cat {
-		margin-bottom: 2rem;
-		font-weight: 600;
+	.subtitle {
+		margin-bottom: 4rem;
 	}
-	li {
-		margin-bottom: 2rem;
-		p:first-of-type {
+	.setup-cat {
+		position: relative;
+		.setup-cat-heading {
+			margin-bottom: 2rem;
 			font-weight: 600;
+		}
+		&:first-of-type .background {
+			position: absolute;
+			top: -250px;
+			left: -50px;
+			width: 100%;
+			height: calc(100% + 280px);
+			background-color: #ededf6;
+			z-index: -1;
+			&:after {
+				content: '';
+				position: absolute;
+				right: -70px;
+				top: 10%;
+				height: 365px;
+				width: 262px;
+				background-image: url('../img/layout-sugar.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+		}
+		&:last-of-type {
+			margin-top: 4rem;
+			.background {
+				position: absolute;
+				top: -90px;
+				right: -50px;
+				width: 100%;
+				height: calc(100% + 90px + 4rem);
+				background-color: #DBDCED;
+				z-index: -2;
+				&:after {
+					content: '';
+					position: absolute;
+					left: -120px;
+					top: 20%;
+					height: 504px;
+					width: 305px;
+					background-image: url('../img/seo-sugar.png');
+					background-size: 100%;
+					background-repeat: no-repeat;
+				}
+			}
+			.support-note {
+				max-width: 650px;
+			}
+		}
+	}
+	ul {
+		padding-left: 2rem;
+		li {
+			margin-bottom: 2rem;
+			p:first-of-type {
+				font-weight: 600;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					left: -2rem;
+					top: 10px;
+					width: 16px;
+					height: 4px;
+					background-color: $alioned-violet;
+				}
+			}
+		}
+		&.seo-list {
+			padding-left: 1rem;
+			border-left: 2px solid $alioned-violet;	
+			li {
+				margin-bottom: .5rem;
+				padding-left: 0;
+			}
+		}
+	}
+	
+}
+
+section.vs-diy {
+	.benefit {
+		margin-bottom: 3rem;
+		// width: 1000px;
+		img {
+			width: 90px;
+			float: left;
+			margin-right: 2rem;
+			display: inline-block;
+		}
+		div {
+			display: inline-block;
+			width: calc(100% - 122px);
+			h3 {
+				margin-bottom: 1rem;
+			}
 		}
 	}
 }
