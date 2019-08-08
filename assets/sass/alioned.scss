@@ -135,9 +135,19 @@ header.section {
 		display: block; //remove this when replacing with logo, flex by default
 	}
 
-	.navbar-menu {
+	.navbar {
+		display: flex;
+		.navbar-brand,
+		.navbar-nav {
+			flex: 1;
+		}
+	}
+
+	.navbar-nav {
+		display: flex;
+    justify-content: flex-end;
 		.navbar-item {
-			text-decoration: underline;
+			display: inline-block;
 			&:hover {
 				background: none;
 				color: $alioned-violet;
@@ -164,6 +174,22 @@ header.section {
 
 	@media (max-width: 768px) {
 		padding-bottom: 3rem;
+		.navbar-nav {
+			display: block;
+			.navbar-item {
+				display: block;
+				padding: 3px;
+				&:before {
+					content: "";
+					position: absolute;
+					left: -2em;
+					height: 2px;
+					width: 1em;
+					background: #e4e7e5;
+					top: 50%;
+				}
+			}
+		}
 	}
 }
 
