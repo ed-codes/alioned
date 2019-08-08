@@ -134,6 +134,16 @@ header.section {
 	.navbar-brand .navbar-item {
 		display: block; //remove this when replacing with logo, flex by default
 	}
+
+	.navbar-menu {
+		.navbar-item {
+			text-decoration: underline;
+			&:hover {
+				background: none;
+				color: $alioned-violet;
+			}
+		}
+	}
 	
 	.subtitle {
 		color: #BDBDBD;
@@ -149,7 +159,7 @@ header.section {
 
 	.logo {
 		max-height: none;
-		width: 164px;
+		width: 40px;
 	}
 
 	@media (max-width: 768px) {
